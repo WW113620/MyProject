@@ -1,0 +1,15 @@
+C:\Users\long.wan\Desktop\RedisStudy\RedisStudy\bin\Debug\RedisStudy.exe.config
+C:\Users\long.wan\Desktop\RedisStudy\RedisStudy\bin\Debug\RedisStudy.exe
+C:\Users\long.wan\Desktop\RedisStudy\RedisStudy\bin\Debug\RedisStudy.pdb
+C:\Users\long.wan\Desktop\RedisStudy\RedisStudy\obj\x86\Debug\RedisStudy.exe
+C:\Users\long.wan\Desktop\RedisStudy\RedisStudy\obj\x86\Debug\RedisStudy.pdb
+C:\Users\long.wan\Desktop\RedisStudy\RedisStudy\obj\x86\Debug\RedisStudy.csprojResolveAssemblyReference.cache
+C:\Users\WW113620\Desktop\RedisStudy\RedisStudy\bin\Debug\RedisStudy.exe.config
+C:\Users\WW113620\Desktop\RedisStudy\RedisStudy\obj\x86\Debug\RedisStudy.exe
+C:\Users\WW113620\Desktop\RedisStudy\RedisStudy\obj\x86\Debug\RedisStudy.pdb
+C:\Users\WW113620\Desktop\RedisStudy\RedisStudy\bin\Debug\RedisStudy.exe
+C:\Users\WW113620\Desktop\RedisStudy\RedisStudy\bin\Debug\RedisStudy.pdb
+C:\Users\WW113620\Desktop\RedisStudy\RedisStudy\obj\x86\Debug\RedisStudy.csprojResolveAssemblyReference.cache
+C:\Users\WW113620\Desktop\test\RedisStudy\RedisStudy\bin\Debug\RedisStudy.exe.config
+C:\Users\WW113620\Desktop\test\RedisStudy\RedisStudy\obj\x86\Debug\RedisStudy.exe
+C:\Users\WW113620\Desktop\test\RedisStudy\RedisStudy\obj\x86\Debug\RedisStudy.pdb
