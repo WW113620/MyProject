@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="TestOrderModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2006/04/edm">
+  <EntityType Name="CustomerInfoSet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="customerName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="customerDate" Type="DateTime" Nullable="false" Precision="3" />
+    <NavigationProperty Name="OrderInfoSet" Relationship="Self.FK_CustomerInfoOrderInfo" FromRole="CustomerInfoSet" ToRole="OrderInfoSet" />
+  </EntityType>
+  <EntityType Name="OrderInfoSet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="orderName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="CustomerInfoSet" Relationship="Self.FK_CustomerInfoOrderInfo" FromRole="OrderInfoSet" ToRole="CustomerInfoSet" />
+  </EntityType>
+  <EntityType Name="UserInfo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="password" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <Association Name="FK_CustomerInfoOrderInfo">
+    <End Role="CustomerInfoSet" Type="Self.CustomerInfoSet" Multiplicity="1" />
+    <End Role="OrderInfoSet" Type="Self.OrderInfoSet" Multiplicity="*" />
+  </Association>
+  <EntityContainer Name="TestOrderEntities">
+    <EntitySet Name="CustomerInfoSet" EntityType="Self.CustomerInfoSet" />
+    <EntitySet Name="OrderInfoSet" EntityType="Self.OrderInfoSet" />
+    <EntitySet Name="UserInfo" EntityType="Self.UserInfo" />
+    <AssociationSet Name="FK_CustomerInfoOrderInfo" Association="Self.FK_CustomerInfoOrderInfo">
+      <End Role="CustomerInfoSet" EntitySet="CustomerInfoSet" />
+      <End Role="OrderInfoSet" EntitySet="OrderInfoSet" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

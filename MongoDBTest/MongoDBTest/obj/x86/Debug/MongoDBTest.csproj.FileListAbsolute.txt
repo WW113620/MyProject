@@ -1,0 +1,16 @@
+c:\users\administrator\documents\visual studio 2010\Projects\MongoDBTest\MongoDBTest\bin\Debug\MongoDBTest.exe
+c:\users\administrator\documents\visual studio 2010\Projects\MongoDBTest\MongoDBTest\bin\Debug\MongoDBTest.pdb
+c:\users\administrator\documents\visual studio 2010\Projects\MongoDBTest\MongoDBTest\obj\x86\Debug\MongoDBTest.csprojResolveAssemblyReference.cache
+c:\users\administrator\documents\visual studio 2010\Projects\MongoDBTest\MongoDBTest\obj\x86\Debug\MongoDBTest.exe
+c:\users\administrator\documents\visual studio 2010\Projects\MongoDBTest\MongoDBTest\obj\x86\Debug\MongoDBTest.pdb
+C:\Users\WW113620\Desktop\MongoDBTest\MongoDBTest\obj\x86\Debug\MongoDBTest.exe
+C:\Users\WW113620\Desktop\MongoDBTest\MongoDBTest\obj\x86\Debug\MongoDBTest.pdb
+C:\Users\WW113620\Desktop\MongoDBTest\MongoDBTest\bin\Debug\MongoDBTest.exe
+C:\Users\WW113620\Desktop\MongoDBTest\MongoDBTest\bin\Debug\MongoDBTest.pdb
+C:\Users\WW113620\Desktop\MongoDBTest\MongoDBTest\obj\x86\Debug\MongoDBTest.csprojResolveAssemblyReference.cache
+C:\Users\WW113620\Desktop\test\MongoDBTest\MongoDBTest\obj\x86\Debug\MongoDBTest.exe
+C:\Users\WW113620\Desktop\test\MongoDBTest\MongoDBTest\obj\x86\Debug\MongoDBTest.pdb
+C:\Users\WW113620\Desktop\test\MongoDBTest\MongoDBTest\bin\Debug\MongoDBTest.exe
+C:\Users\WW113620\Desktop\test\MongoDBTest\MongoDBTest\bin\Debug\MongoDBTest.pdb
+C:\Users\WW113620\Desktop\test\MongoDBTest\MongoDBTest\obj\x86\Debug\MongoDBTest.csprojResolveAssemblyReference.cache
+C:\Users\WW113620\Desktop\test\MongoDBTest\MongoDBTest\bin\Debug\MongoDBTest.exe.config

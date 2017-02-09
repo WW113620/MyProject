@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="TestOrderModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2006/04/edm/ssdl">
+  <EntityType Name="CustomerInfoSet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="customerName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="customerDate" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="OrderInfoSet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="orderName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="CustomerInfo_Id" Type="int" Nullable="false" />
+  </EntityType>
+  <!--生成过程中发现错误:
+警告 6002: 表/视图“TestOrder.dbo.UserInfo”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
+  <EntityType Name="UserInfo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="password" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <Association Name="FK_CustomerInfoOrderInfo">
+    <End Role="CustomerInfoSet" Type="Self.CustomerInfoSet" Multiplicity="1" />
+    <End Role="OrderInfoSet" Type="Self.OrderInfoSet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CustomerInfoSet">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="OrderInfoSet">
+        <PropertyRef Name="CustomerInfo_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="TestOrderModelStoreContainer">
+    <EntitySet Name="CustomerInfoSet" EntityType="Self.CustomerInfoSet" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="OrderInfoSet" EntityType="Self.OrderInfoSet" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UserInfo" EntityType="Self.UserInfo" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+[UserInfo].[Id] AS [Id], 
+[UserInfo].[Name] AS [Name], 
+[UserInfo].[password] AS [password]
+FROM [dbo].[UserInfo] AS [UserInfo]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="FK_CustomerInfoOrderInfo" Association="Self.FK_CustomerInfoOrderInfo">
+      <End Role="CustomerInfoSet" EntitySet="CustomerInfoSet" />
+      <End Role="OrderInfoSet" EntitySet="OrderInfoSet" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

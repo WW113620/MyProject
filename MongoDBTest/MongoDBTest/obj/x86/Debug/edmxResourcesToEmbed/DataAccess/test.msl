@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="urn:schemas-microsoft-com:windows:storage:mapping:CS">
+  <EntityContainerMapping StorageEntityContainer="TestOrderModelStoreContainer" CdmEntityContainer="TestOrderEntities">
+    <EntitySetMapping Name="CustomerInfoSet">
+      <EntityTypeMapping TypeName="TestOrderModel.CustomerInfoSet">
+        <MappingFragment StoreEntitySet="CustomerInfoSet">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="customerName" ColumnName="customerName" />
+          <ScalarProperty Name="customerDate" ColumnName="customerDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OrderInfoSet">
+      <EntityTypeMapping TypeName="TestOrderModel.OrderInfoSet">
+        <MappingFragment StoreEntitySet="OrderInfoSet">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="orderName" ColumnName="orderName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserInfo">
+      <EntityTypeMapping TypeName="TestOrderModel.UserInfo">
+        <MappingFragment StoreEntitySet="UserInfo">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="password" ColumnName="password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="FK_CustomerInfoOrderInfo" TypeName="TestOrderModel.FK_CustomerInfoOrderInfo" StoreEntitySet="OrderInfoSet">
+      <EndProperty Name="CustomerInfoSet">
+        <ScalarProperty Name="Id" ColumnName="CustomerInfo_Id" />
+      </EndProperty>
+      <EndProperty Name="OrderInfoSet">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>

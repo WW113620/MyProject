@@ -1,0 +1,12 @@
+C:\Users\WW113620\Desktop\MongoDBTest\MongoDB02\bin\Debug\MongoDB02.exe.config
+C:\Users\WW113620\Desktop\MongoDBTest\MongoDB02\bin\Debug\MongoDB02.exe
+C:\Users\WW113620\Desktop\MongoDBTest\MongoDB02\bin\Debug\MongoDB02.pdb
+C:\Users\WW113620\Desktop\MongoDBTest\MongoDB02\obj\Debug\MongoDB02.exe
+C:\Users\WW113620\Desktop\MongoDBTest\MongoDB02\obj\Debug\MongoDB02.pdb
+C:\Users\WW113620\Desktop\MongoDBTest\MongoDB02\obj\Debug\MongoDB02.csprojResolveAssemblyReference.cache
+C:\Users\WW113620\Desktop\test\MongoDBTest\MongoDB02\bin\Debug\MongoDB02.exe.config
+C:\Users\WW113620\Desktop\test\MongoDBTest\MongoDB02\obj\Debug\MongoDB02.exe
+C:\Users\WW113620\Desktop\test\MongoDBTest\MongoDB02\obj\Debug\MongoDB02.pdb
+C:\Users\WW113620\Desktop\test\MongoDBTest\MongoDB02\bin\Debug\MongoDB02.exe
+C:\Users\WW113620\Desktop\test\MongoDBTest\MongoDB02\bin\Debug\MongoDB02.pdb
+C:\Users\WW113620\Desktop\test\MongoDBTest\MongoDB02\obj\Debug\MongoDB02.csprojResolveAssemblyReference.cache
