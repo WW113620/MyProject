@@ -1,0 +1,14 @@
+2017-01-21 12:05:03,614 [5] INFO  MyTest.Controllers.HomeController [(null)] -具体期刊页面当前期刊'目录'检索花费时间:20955
+2017-01-21 12:06:08,145 [11] INFO  MyTest.Controllers.HomeController [(null)] -具体期刊页面当前期刊'目录'检索花费时间:3506
+2017-01-21 12:08:22,555 [10] INFO  MyTest.Controllers.HomeController [(null)] -具体期刊页面当前期刊'目录'检索花费时间:14402
+2017-01-21 12:11:01,847 [8] INFO  MyTest.Controllers.HomeController [(null)] -具体期刊页面当前期刊'目录'检索花费时间:13182
+2017-01-21 12:18:16,763 [6] INFO  MyTest.Controllers.HomeController [(null)] -具体期刊页面当前期刊'目录'检索花费时间:3639
+2017-01-21 13:35:36,638 [10] INFO  MyTest.Controllers.HomeController [(null)] -具体期刊页面当前期刊'目录'检索花费时间:1152
+2017-01-21 13:36:57,188 [10] INFO  MyTest.Controllers.HomeController [(null)] -具体期刊页面当前期刊'目录'检索花费时间:10
+2017-01-21 13:37:22,463 [6] INFO  MyTest.Controllers.HomeController [(null)] -具体期刊页面当前期刊'目录'检索花费时间:596
+2017-01-21 14:04:39,452 [9] INFO  MyTest.Controllers.HomeController [(null)] -具体期刊页面当前期刊'目录'检索花费时间:784
+2017-01-21 14:20:03,887 [10] INFO  MyTest.Controllers.HomeController [(null)] -具体期刊页面当前期刊'目录'检索花费时间:796
+2017-01-21 14:21:53,439 [9] INFO  MyTest.Controllers.HomeController [(null)] -具体期刊页面当前期刊'目录'检索花费时间:725
+2017-01-21 14:25:46,474 [10] INFO  MyTest.Controllers.HomeController [(null)] -具体期刊页面当前期刊'目录'检索花费时间:33749
+2017-02-09 08:30:26,412 [6] INFO  MyTest.Controllers.HomeController [(null)] -具体期刊页面当前期刊'目录'检索花费时间:2800
+2017-02-09 08:41:50,564 [7] INFO  MyTest.Controllers.HomeController [(null)] -具体期刊页面当前期刊'目录'检索花费时间:1116

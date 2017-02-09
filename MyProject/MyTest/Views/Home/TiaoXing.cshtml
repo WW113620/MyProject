@@ -1,0 +1,49 @@
+﻿@{
+    ViewBag.Title = "TiaoXing";
+}
+
+<h2>TiaoXing</h2>
+
+<div>
+    <table>
+        <tr>
+            <td>条码：</td>
+            <td>
+                <textarea id="barCode"></textarea><br/>
+                <span style="color: #ccc;">动态生成条码，生成多条码使用“,”号分隔。</span>
+            </td>
+        </tr>
+        <tr>
+            <td id="print"></td>
+            <td>
+                <a id="btnCreate">生成</a>
+            </td>
+        </tr>
+    </table>
+</div>
+<script src="~/Scripts/jquery-1.8.2.min.js"></script>
+<script>
+    $("#btnCreate").click(function () {
+        var barCode = $("#barCode").val();
+        if (barCode != "" && barCode != null) {
+            $("#print").html("");
+            var imgStr = "";
+            if (barCode.indexOf(",") > -1) {
+                var code = barCode.split(",");
+                $.each(code, function (index, value) {
+                    if (value != "" && value != null) {
+                        imgStr += "<div><img src='/home/CreateBarCode?code=" + value + "'/></div>";
+                    }
+                });
+            }
+            else {
+                imgStr = "<div><img src='/home/CreateBarCode?code=" + barCode + "'/></div>";
+            }
+
+            $("#print").append(imgStr);
+        }
+        else {
+            alert("条码不能为空！");
+        }
+    });
+</script>

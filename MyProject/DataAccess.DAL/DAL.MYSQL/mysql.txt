@@ -1,0 +1,4 @@
+﻿-----------创建索引
+ALTER TABLE `matchpoint_db`.`mp_favorite` ADD INDEX `IDX_UserName` (`UserName`); 
+ALTER TABLE `matchpoint_db`.`mp_public` DROP INDEX `IDX_QuestionGUID`, ADD INDEX `IDX_QuestionGUID` (`QuestionGUID`);
+ALTER TABLE `matchpoint_db`.`mp_public`  ADD INDEX `IDX_KeyWord` (`QuestionTitle`, `KnowledgePoint`);   

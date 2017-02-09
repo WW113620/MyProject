@@ -1,0 +1,9 @@
+C:\Users\WW113620\Desktop\test123\Test\Models.Common\bin\Debug\Models.Common.dll
+C:\Users\WW113620\Desktop\test123\Test\Models.Common\bin\Debug\Models.Common.pdb
+C:\Users\WW113620\Desktop\test123\Test\Models.Common\obj\Debug\Models.Common.dll
+C:\Users\WW113620\Desktop\test123\Test\Models.Common\obj\Debug\Models.Common.pdb
+C:\Users\WW113620\Desktop\test\MyProject\Models.Common\bin\Debug\Models.Common.dll
+C:\Users\WW113620\Desktop\test\MyProject\Models.Common\bin\Debug\Models.Common.pdb
+C:\Users\WW113620\Desktop\test\MyProject\Models.Common\obj\Debug\Models.Common.dll
+C:\Users\WW113620\Desktop\test\MyProject\Models.Common\obj\Debug\Models.Common.pdb
+C:\Users\WW113620\Desktop\test\MyProject\Models.Common\obj\Debug\Models.Common.csprojResolveAssemblyReference.cache
